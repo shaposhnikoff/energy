@@ -100,11 +100,11 @@ merge_files_per_day()
 create_voltage_graph_from_csv_file('/Volumes/NetworkBackupShare/shelly/2025-04-02/2025-04-02.csv')
 create_current_graph_from_csv_file('/Volumes/NetworkBackupShare/shelly/2025-04-02/2025-04-02.csv')
 
-# for file in list_files('/Volumes/NetworkBackupShare/shelly'):
-#     print(file)
-#     with open(file, 'r') as f:
-#         file_contents = f.read()
-#         #print(file_contents)
-#         create_voltage_graph_from_csv_file(file)
-#         create_current_graph_from_csv_file(file)
-#         time.sleep(1)
+for file in list_files('/Volumes/NetworkBackupShare/shelly'):
+    print(file)
+    with open(file, 'r') as f:
+        file_contents = f.read()
+        #print(file_contents)
+        create_voltage_graph_from_csv_file(file)
+        create_current_graph_from_csv_file(file)
+        time.sleep(1)

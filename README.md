@@ -30,3 +30,9 @@
 ## shellyStatus_2025-04-02-17_voltage_graph_all_phases.png
 ![shellyStatus_2025-04-02-17_voltage_graph_all_phases.png](graph/shellyStatus_2025-04-02-17_voltage_graph_all_phases.png)
 
+## shellyStatus_2025-04-02-18_current_graph_all_phases.png
+![shellyStatus_2025-04-02-18_current_graph_all_phases.png](graph/shellyStatus_2025-04-02-18_current_graph_all_phases.png)
+
+## shellyStatus_2025-04-02-18_voltage_graph_all_phases.png
+![shellyStatus_2025-04-02-18_voltage_graph_all_phases.png](graph/shellyStatus_2025-04-02-18_voltage_graph_all_phases.png)
+
