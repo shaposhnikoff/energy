@@ -31,7 +31,7 @@ jobs:
 
       # Run the script to generate graphs and README.md
       - name: Generate README.md
-        run: create_graph_her_hour.py
+        run: python create_graph_her_hour.py
 
       - name: Run graph generation script
         run: python create_github_pages.py
