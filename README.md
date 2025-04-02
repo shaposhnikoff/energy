@@ -36,3 +36,21 @@
 ## shellyStatus_2025-04-02-18_voltage_graph_all_phases.png
 ![shellyStatus_2025-04-02-18_voltage_graph_all_phases.png](graph/shellyStatus_2025-04-02-18_voltage_graph_all_phases.png)
 
+## shellyStatus_2025-04-02-19_current_graph_all_phases.png
+![shellyStatus_2025-04-02-19_current_graph_all_phases.png](graph/shellyStatus_2025-04-02-19_current_graph_all_phases.png)
+
+## shellyStatus_2025-04-02-19_voltage_graph_all_phases.png
+![shellyStatus_2025-04-02-19_voltage_graph_all_phases.png](graph/shellyStatus_2025-04-02-19_voltage_graph_all_phases.png)
+
+## shellyStatus_2025-04-02-20_current_graph_all_phases.png
+![shellyStatus_2025-04-02-20_current_graph_all_phases.png](graph/shellyStatus_2025-04-02-20_current_graph_all_phases.png)
+
+## shellyStatus_2025-04-02-20_voltage_graph_all_phases.png
+![shellyStatus_2025-04-02-20_voltage_graph_all_phases.png](graph/shellyStatus_2025-04-02-20_voltage_graph_all_phases.png)
+
+## shellyStatus_2025-04-02-21_current_graph_all_phases.png
+![shellyStatus_2025-04-02-21_current_graph_all_phases.png](graph/shellyStatus_2025-04-02-21_current_graph_all_phases.png)
+
+## shellyStatus_2025-04-02-21_voltage_graph_all_phases.png
+![shellyStatus_2025-04-02-21_voltage_graph_all_phases.png](graph/shellyStatus_2025-04-02-21_voltage_graph_all_phases.png)
+
