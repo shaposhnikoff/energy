@@ -1,3 +1,23 @@
+import pandas as pd
+import numpy as np
+import datetime
+import matplotlib.pyplot as plt
+
+import os
+import glob
+import re
+import sys
+import shutil
+import json
+import time
+import logging
+import requests
+import math
+import statistics
+import random
+import string
+import csv
+
 def create_html_with_graphs(graph_folder, output_html):
     """
     Iterate over all files in the specified folder and create an HTML file with embedded graphs.
@@ -50,4 +70,5 @@ def create_html_with_graphs(graph_folder, output_html):
     print(f"HTML file created: {output_html}")
 
 # Example usage
-create_html_with_graphs('/Volumes/NetworkBackupShare/shelly/Graph', '/Volumes/NetworkBackupShare/shelly/graphs_overview.html')
+create_html_with_graphs('graph/',
+                         'graphs_overview.html')
