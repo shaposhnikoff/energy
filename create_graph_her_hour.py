@@ -18,7 +18,7 @@ import random
 import string
 import csv
 
-defaault_path = '/Volumes/NetworkBackupShare/shelly'
+defaault_path = 'graph'
 
 def list_files(directory):
     files = glob.glob(os.path.join(directory, '*.csv'))
@@ -96,15 +96,14 @@ def merge_files_per_day():
         print(f"Saved merged file: {output_file}")
 
 # Запуск функции
-merge_files_per_day()
-create_voltage_graph_from_csv_file('/Volumes/NetworkBackupShare/shelly/2025-04-02/2025-04-02.csv')
-create_current_graph_from_csv_file('/Volumes/NetworkBackupShare/shelly/2025-04-02/2025-04-02.csv')
+#merge_files_per_day()
+#create_voltage_graph_from_csv_file('/Volumes/NetworkBackupShare/shelly/2025-04-02/2025-04-02.csv')
+#create_current_graph_from_csv_file('/Volumes/NetworkBackupShare/shelly/2025-04-02/2025-04-02.csv')
 
-for file in list_files('/Volumes/NetworkBackupShare/shelly'):
+for file in list_files(defaault_path):
     print(file)
     with open(file, 'r') as f:
         file_contents = f.read()
-        #print(file_contents)
         create_voltage_graph_from_csv_file(file)
         create_current_graph_from_csv_file(file)
         time.sleep(1)
