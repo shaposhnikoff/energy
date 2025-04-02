@@ -18,57 +18,31 @@ import random
 import string
 import csv
 
-def create_html_with_graphs(graph_folder, output_html):
+
+def create_readme_with_graphs(graph_folder, output_readme):
     """
-    Iterate over all files in the specified folder and create an HTML file with embedded graphs.
+    Iterate over all files in the specified folder and create a README.md file with embedded graphs.
     
     :param graph_folder: Path to the folder containing graph images.
-    :param output_html: Path to the output HTML file.
+    :param output_readme: Path to the output README.md file.
     """
     # List all PNG files in the folder
     graph_files = sorted(glob.glob(os.path.join(graph_folder, '*.png')))
     
-    # Start building the HTML content
-    html_content = """
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Graphs Overview</title>
-        <style>
-            body { font-family: Arial, sans-serif; margin: 20px; }
-            h1 { text-align: center; }
-            .graph { margin-bottom: 20px; text-align: center; }
-            img { max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px; }
-        </style>
-    </head>
-    <body>
-        <h1>Graphs Overview</h1>
-    """
+    # Start building the README content
+    readme_content = "# Graphs Overview\n\n"
     
-    # Add each graph to the HTML
+    # Add each graph to the README
     for graph_file in graph_files:
         graph_name = os.path.basename(graph_file)
-        html_content += f"""
-        <div class="graph">
-            <h2>{graph_name}</h2>
-            <img src="{graph_file}" alt="{graph_name}">
-        </div>
-        """
+        readme_content += f"## {graph_name}\n"
+        readme_content += f"![{graph_name}](graph/{graph_name})\n\n"
     
-    # Close the HTML content
-    html_content += """
-    </body>
-    </html>
-    """
+    # Write the README content to the output file
+    with open(output_readme, 'w') as readme_file:
+        readme_file.write(readme_content)
     
-    # Write the HTML content to the output file
-    with open(output_html, 'w') as html_file:
-        html_file.write(html_content)
-    
-    print(f"HTML file created: {output_html}")
+    print(f"README.md file created: {output_readme}")
 
 # Example usage
-create_html_with_graphs('graph/',
-                         'graphs_overview.html')
+create_readme_with_graphs('graph', 'README.md')
